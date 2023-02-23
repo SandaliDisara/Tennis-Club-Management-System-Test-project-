@@ -28,6 +28,12 @@ app.listen(PORT, ()=>{
     console.log(`Server is running on port: ${PORT}`);
 });
 
+const memberRouter = require("./routes/members");
+
+app.use("/member", memberRouter);
+
+
+
 
 
 
