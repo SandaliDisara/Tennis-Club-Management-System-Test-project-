@@ -1,0 +1,82 @@
+/* Add a container for the left panel content */
+.left-panel-content {
+    max-height: calc(100vh - 60px); /* Adjust as needed */
+    overflow-y: auto;
+  }
+  
+  /* Style the search bar */
+  .search-bar {
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Style the product list */
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+  }
+  
+  /* Style the product cards */
+  .product-card {
+    width: 200px;
+    margin-bottom: 20px; /* Add some space between cards */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+
+  .product-card img {
+    max-width: 100%; /* Ensures the image fits within the card */
+    max-height: 150px; /* Set your desired maximum height */
+    height: auto;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Style the Add button */
+  .product-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .product-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style the right panel containers */
+  .right-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 1px solid #ccc;
+  }
+  
+  .container {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container h2 {
+    margin-bottom: 10px;
+  }
+
+  /* Style the images inside the containers */
+  .container-item img {
+    max-width: 30%;
+    max-height: 30%; /* Set your desired maximum height for images inside containers */
+    height: auto;
+  }
